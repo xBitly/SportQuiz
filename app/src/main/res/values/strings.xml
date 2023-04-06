@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Sport Quiz</string>
+
+    <string name="buy_wallpaper">Buy wallpaper</string>
+    <string name="buy_and_install">Buy and install</string>
+    <string name="buy">Buy</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="shop">Shop</string>
+    <string name="quiz">Quiz</string>
+    <string name="home">Home</string>
+    <string name="points">Points</string>
+
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
 </resources>

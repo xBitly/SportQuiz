@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_margin">24dp</dimen>
+    <dimen name="top_vertical_margin">32dp</dimen>
+    <dimen name="bottom_vertical_margin">24dp</dimen>
+    <dimen name="center_vertical_margin">24dp</dimen>
+
+    <dimen name="corner_radius_big">32dp</dimen>
+    <dimen name="corner_radius_medium">24dp</dimen>
+
+    <dimen name="title_size">128sp</dimen>
+    <dimen name="header_size">24sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+
+    <dimen name="bottom_navigation_bar_height">64dp</dimen>
+    <dimen name="bottom_navigation_bar_wight">144dp</dimen>
+
+    <dimen name="header_height">32dp</dimen>
+
+    <dimen name="icon_size">24dp</dimen>
+</resources>
