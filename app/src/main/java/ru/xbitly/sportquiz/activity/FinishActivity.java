@@ -1,14 +1,16 @@
-package ru.xbitly.sportquiz;
+package ru.xbitly.sportquiz.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class GameActivity extends AppCompatActivity {
+import ru.xbitly.sportquiz.R;
+
+public class FinishActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.activity_finish);
     }
 }

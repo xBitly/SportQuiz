@@ -12,10 +12,10 @@
         android:layout_marginStart="@dimen/horizontal_margin"
         android:layout_marginEnd="@dimen/horizontal_margin"
         android:layout_marginBottom="@dimen/center_vertical_margin"
-        android:text="@string/buy_wallpaper"
+        android:text="@string/install_wallpaper"
         android:textSize="@dimen/header_size"/>
     <Button
-        android:id="@+id/button_buy_and_install"
+        android:id="@+id/button_install"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="@dimen/button_height"
@@ -23,20 +23,7 @@
         android:layout_marginEnd="@dimen/horizontal_margin"
         android:layout_marginBottom="@dimen/item_vertical_margin"
         android:background="@drawable/dg_corner_light_grey"
-        android:text="@string/buy_and_install"
-        android:textColor="@color/dark_grey"
-        android:fontFamily="@font/montserrat_bold" />
-
-    <Button
-        android:id="@+id/button_buy"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/button_height"
-        android:layout_marginStart="@dimen/horizontal_margin"
-        android:layout_marginEnd="@dimen/horizontal_margin"
-        android:layout_marginBottom="@dimen/item_vertical_margin"
-        android:background="@drawable/dg_corner_light_grey"
-        android:text="@string/buy"
+        android:text="@string/install"
         android:textColor="@color/dark_grey"
         android:fontFamily="@font/montserrat_bold" />
 

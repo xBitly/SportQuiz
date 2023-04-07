@@ -1,16 +1,22 @@
-package ru.xbitly.sportquiz;
+package ru.xbitly.sportquiz.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
+
+import ru.xbitly.sportquiz.data.Question;
+import ru.xbitly.sportquiz.data.Wallpaper;
+import ru.xbitly.sportquiz.fragment.QuizFragment;
+import ru.xbitly.sportquiz.R;
+import ru.xbitly.sportquiz.fragment.ShopFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
+    private ArrayList<Wallpaper> wallpapers = new ArrayList<>();
 
     @SuppressLint({"NonConstantResourceId", "UseCompatLoadingForDrawables"})
     @Override
@@ -33,8 +40,43 @@ public class MainActivity extends AppCompatActivity {
         TextView points = findViewById(R.id.text_points);
 
         String pointsText = getString(R.string.points) + ": " + sharedPreferences.getInt("points", 0);
+        wallpapers.add(
+                new Wallpaper(
+                        10,
+                        sharedPreferences.getString("purchased", "").contains(Integer.toString(R.drawable.img_wallpaper_1)),
+                        R.drawable.img_wallpaper_1
+                )
+        );
+        wallpapers.add(
+                new Wallpaper(
+                        20,
+                        sharedPreferences.getString("purchased", "").contains(Integer.toString(R.drawable.img_wallpaper_2)),
+                        R.drawable.img_wallpaper_2
+                )
+        );
+        wallpapers.add(
+                new Wallpaper(
+                        30,
+                        sharedPreferences.getString("purchased", "").contains(Integer.toString(R.drawable.img_wallpaper_3)),
+                        R.drawable.img_wallpaper_3
+                )
+        );
+        wallpapers.add(
+                new Wallpaper(
+                        40,
+                        sharedPreferences.getString("purchased", "").contains(Integer.toString(R.drawable.img_wallpaper_4)),
+                        R.drawable.img_wallpaper_4
+                )
+        );
+        wallpapers.add(
+                new Wallpaper(
+                        50,
+                        sharedPreferences.getString("purchased", "").contains(Integer.toString(R.drawable.img_wallpaper_5)),
+                        R.drawable.img_wallpaper_5
+                )
+        );
 
-        ShopFragment shopFragment = new ShopFragment(this);
+        ShopFragment shopFragment = new ShopFragment(this, wallpapers, points);
         QuizFragment quizFragment = new QuizFragment(this);
 
         points.setText(pointsText);
@@ -58,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
     }
+
+    //TODO: onBackPressed()
 
     @Override
     protected void onResume() {

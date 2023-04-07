@@ -1,9 +1,9 @@
-package ru.xbitly.sportquiz;
+package ru.xbitly.sportquiz.data;
 
 public class Question {
-    private String question;
-    private String[] answers;
-    private int correctAnswer;
+    private final String question;
+    private final String[] answers;
+    private final int correctAnswer;
 
     public Question(String question, String[] answers, int correctAnswer) {
         this.question = question;

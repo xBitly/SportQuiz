@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/view_control"
-        android:layout_marginBottom="@dimen/bottom_vertical_margin">
+        android:layout_marginBottom="@dimen/bottom_vertical_margin"
+        android:layout_marginTop="@dimen/center_vertical_margin">
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager"
             android:overScrollMode="never"
@@ -22,6 +23,8 @@
         android:layout_width="@dimen/bottom_navigation_bar_wight"
         android:layout_height="@dimen/bottom_navigation_bar_height"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_vertical_margin"
+        android:layout_marginStart="@dimen/horizontal_margin"
         android:weightSum="2">
         <ImageButton
             android:id="@+id/button_left"

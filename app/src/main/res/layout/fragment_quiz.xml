@@ -4,7 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="@dimen/bottom_navigation_bar_height"
-    android:paddingBottom="@dimen/item_vertical_margin"
+    android:layout_marginEnd="@dimen/horizontal_margin"
+    android:layout_marginStart="@dimen/horizontal_margin"
+    android:layout_marginTop="@dimen/center_vertical_margin"
+    android:paddingBottom="@dimen/top_vertical_margin"
     android:background="@color/white"
     android:orientation="vertical"
     android:weightSum="3">

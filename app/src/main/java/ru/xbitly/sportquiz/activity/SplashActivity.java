@@ -1,4 +1,4 @@
-package ru.xbitly.sportquiz;
+package ru.xbitly.sportquiz.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

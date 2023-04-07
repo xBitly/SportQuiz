@@ -5,6 +5,10 @@
     <string name="buy_and_install">Buy and install</string>
     <string name="buy">Buy</string>
     <string name="cancel">Cancel</string>
+    <string name="install">Install</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="install_wallpaper">Install wallpaper</string>
 
     <string name="shop">Shop</string>
     <string name="quiz">Quiz</string>
@@ -17,4 +21,5 @@
 
     <string name="correct">Correct</string>
     <string name="incorrect">Incorrect</string>
+    <string name="not_enough_points">Not enough points</string>
 </resources>

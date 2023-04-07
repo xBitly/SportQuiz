@@ -38,11 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/header"
-        android:layout_alignParentStart="true"
-        android:layout_marginEnd="@dimen/horizontal_margin"
-        android:layout_marginStart="@dimen/horizontal_margin"
-        android:layout_marginBottom="@dimen/bottom_vertical_margin"
-        android:layout_marginTop="@dimen/center_vertical_margin" />
+        android:layout_alignParentStart="true"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
