@@ -15,7 +15,12 @@
     <dimen name="bottom_navigation_bar_height">64dp</dimen>
     <dimen name="bottom_navigation_bar_wight">144dp</dimen>
 
+    <dimen name="button_height">64dp</dimen>
+
     <dimen name="header_height">32dp</dimen>
 
+    <dimen name="timer_text_top">-12dp</dimen>
+
     <dimen name="icon_size">24dp</dimen>
+    <dimen name="item_vertical_margin">12dp</dimen>
 </resources>

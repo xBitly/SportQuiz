@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_home"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/top_vertical_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="9/4"
+            android:textColor="@color/green"
+            android:textSize="@dimen/title_size"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_home"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/bottom_vertical_margin"
+        android:background="@drawable/dg_corner_light_grey"
+        android:text="@string/home"
+        android:textColor="@color/dark_grey"
+        android:fontFamily="@font/montserrat_bold" />
+</RelativeLayout>

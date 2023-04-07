@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_vertical_margin"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/center_vertical_margin"
+        android:text="@string/buy_wallpaper"
+        android:textSize="@dimen/header_size"/>
+    <Button
+        android:id="@+id/button_buy_and_install"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/item_vertical_margin"
+        android:background="@drawable/dg_corner_light_grey"
+        android:text="@string/buy_and_install"
+        android:textColor="@color/dark_grey"
+        android:fontFamily="@font/montserrat_bold" />
+
+    <Button
+        android:id="@+id/button_buy"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/item_vertical_margin"
+        android:background="@drawable/dg_corner_light_grey"
+        android:text="@string/buy"
+        android:textColor="@color/dark_grey"
+        android:fontFamily="@font/montserrat_bold" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/bottom_vertical_margin"
+        android:background="@color/white"
+        android:text="@string/cancel"
+        android:textColor="@color/medium_grey_selector"
+        android:fontFamily="@font/montserrat_bold" />
+</LinearLayout>

@@ -5,8 +5,10 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">@color/white</item>
         <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:textSize">@dimen/text_size</item>
         <item name="android:textColor">@color/black</item>
         <item name="fontFamily">@font/montserrat_extrabold</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="Theme.SportQuiz.Splash" parent="Theme.AppCompat.Light.NoActionBar">

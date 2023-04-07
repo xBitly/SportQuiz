@@ -28,7 +28,6 @@
             android:gravity="bottom"
             android:layout_alignParentEnd="true"
             android:fontFamily="@font/montserrat_bold"
-            android:textSize="@dimen/text_size"
             android:textColor="@color/medium_grey"
             tools:text="Points: 12" />
     </RelativeLayout>

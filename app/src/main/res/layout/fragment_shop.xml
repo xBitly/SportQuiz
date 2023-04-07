@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/relative_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view_control"
+        android:layout_marginBottom="@dimen/bottom_vertical_margin">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_control"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/bottom_navigation_bar_wight"
+        android:layout_height="@dimen/bottom_navigation_bar_height"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+        <ImageButton
+            android:id="@+id/button_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/ic_left_arrow"/>
+        <ImageButton
+            android:id="@+id/button_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/ic_right_arrow"/>
+    </LinearLayout>
+</RelativeLayout>
