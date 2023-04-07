@@ -18,14 +18,15 @@
             android:background="@color/white"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_exit"/>
+
         <TextView
             android:id="@+id/text_timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/timer_text_top"
-            tools:text="30"
             android:layout_centerInParent="true"
-            android:textSize="@dimen/header_size"/>
+            android:layout_marginTop="@dimen/timer_text_top"
+            android:textSize="@dimen/header_size"
+            tools:text="30" />
         <TextView
             android:id="@+id/text_points"
             android:layout_width="wrap_content"

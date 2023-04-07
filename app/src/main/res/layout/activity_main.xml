@@ -14,23 +14,35 @@
         android:layout_marginStart="@dimen/horizontal_margin"
         android:layout_marginEnd="@dimen/horizontal_margin">
         <TextView
-            android:id="@+id/header_title"
+            android:id="@+id/text_header"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/timer_text_top"
             android:textSize="@dimen/header_size"
             tools:text="@string/shop" />
 
         <TextView
-            android:id="@+id/points"
+            android:id="@+id/text_points"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="bottom"
+            android:gravity="center"
             android:layout_alignParentEnd="true"
             android:fontFamily="@font/montserrat_bold"
             android:textColor="@color/medium_grey"
             tools:text="Points: 12" />
     </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/bottom_vertical_margin"
+        android:layout_marginTop="@dimen/center_vertical_margin" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -47,15 +59,4 @@
         app:itemIconTint="@color/medium_grey_dark_selector"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_navigation_menu" />
-
-    <FrameLayout
-        android:id="@+id/fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/header"
-        android:layout_alignParentStart="true"
-        android:layout_marginEnd="@dimen/horizontal_margin"
-        android:layout_marginStart="@dimen/horizontal_margin"
-        android:layout_marginBottom="@dimen/bottom_vertical_margin"
-        android:layout_marginTop="@dimen/center_vertical_margin" />
 </RelativeLayout>
