@@ -8,7 +8,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="@dimen/button_height"
-        android:background="@drawable/dg_corner_light_grey"
+        android:background="@drawable/bg_corner_light_grey_small"
         android:layout_marginTop="@dimen/item_vertical_margin"
         tools:text="@string/quiz"
         android:textColor="@color/dark_grey"

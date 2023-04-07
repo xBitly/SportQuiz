@@ -22,7 +22,7 @@
         android:layout_marginStart="@dimen/horizontal_margin"
         android:layout_marginEnd="@dimen/horizontal_margin"
         android:layout_marginBottom="@dimen/item_vertical_margin"
-        android:background="@drawable/dg_corner_light_grey"
+        android:background="@drawable/bg_corner_light_grey_small"
         android:text="@string/buy_and_install"
         android:textColor="@color/dark_grey"
         android:fontFamily="@font/montserrat_bold" />
@@ -35,7 +35,7 @@
         android:layout_marginStart="@dimen/horizontal_margin"
         android:layout_marginEnd="@dimen/horizontal_margin"
         android:layout_marginBottom="@dimen/item_vertical_margin"
-        android:background="@drawable/dg_corner_light_grey"
+        android:background="@drawable/bg_corner_light_grey_small"
         android:text="@string/buy"
         android:textColor="@color/dark_grey"
         android:fontFamily="@font/montserrat_bold" />

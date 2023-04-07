@@ -100,6 +100,7 @@ public class WallpaperPagerAdapter extends PagerAdapter {
         return view.equals(object);
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private void createInstallAlertDialog(Wallpaper wallpaper){
         AlertDialog.Builder dialog = new AlertDialog.Builder(context);
         LayoutInflater inflater = LayoutInflater.from(dialog.getContext());
@@ -114,7 +115,7 @@ public class WallpaperPagerAdapter extends PagerAdapter {
         buttonCancel.setOnClickListener(view -> alert.dismiss());
         buttonInstall.setOnClickListener(view -> {
             try {
-                setWallpaper(context, drawableToBitmap(AppCompatResources.getDrawable(context, wallpaper.getDrawableId())));
+                setWallpaper(context, drawableToBitmap(context.getDrawable(wallpaper.getDrawableId())));
             } catch (IOException e) {
                 Toast.makeText(context, R.string.error, Toast.LENGTH_SHORT).show();
             }
@@ -122,9 +123,8 @@ public class WallpaperPagerAdapter extends PagerAdapter {
             Toast.makeText(context, R.string.success, Toast.LENGTH_SHORT).show();
         });
 
-        @SuppressLint("UseCompatLoadingForDrawables")
         Drawable back = context.getDrawable(R.drawable.bg_corner_white);
-        InsetDrawable inset = new InsetDrawable(back, context.getResources().getDimensionPixelSize(R.dimen.horizontal_margin));
+        InsetDrawable inset = new InsetDrawable(back, context.getResources().getDimensionPixelSize(R.dimen.item_vertical_margin));
         alert.getWindow().setBackgroundDrawable(inset);
         alert.show();
     }
@@ -158,7 +158,7 @@ public class WallpaperPagerAdapter extends PagerAdapter {
 
         @SuppressLint("UseCompatLoadingForDrawables")
         Drawable back = context.getDrawable(R.drawable.bg_corner_white);
-        InsetDrawable inset = new InsetDrawable(back, context.getResources().getDimensionPixelSize(R.dimen.horizontal_margin));
+        InsetDrawable inset = new InsetDrawable(back, context.getResources().getDimensionPixelSize(R.dimen.item_vertical_margin));
         alert.getWindow().setBackgroundDrawable(inset);
         alert.show();
     }
